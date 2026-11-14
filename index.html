@@ -18,7 +18,7 @@ h1{font-size:1.5rem;margin-bottom:4px}h2{font-size:1.1rem;margin-top:28px}
 <h2>1. البيانات المحفوظة على جهازك</h2>
 <p>يُحفظ تقدم اللاعب (الرصيد الافتراضي، المستوى، المخزون، العقارات داخل اللعبة، شكل الشخصية والإعدادات) محليًا على جهازه.</p>
 <h2>2. الحساب ورقم اللاعب</h2>
-<p>عند تشغيل اللعبة يُنشأ للاعب حساب مجهول تلقائيًا عبر خدمة Google Firebase، ويُعطى رقم لاعب من 8 أرقام. لا نطلب الاسم الحقيقي أو البريد أو رقم الجوال. يُحفظ على خوادم Firebase: رقم اللاعب، والاسم الذي يختاره داخل اللعبة، وشكل الشخصية، والمستوى، وآخر وقت اتصال، وقائمة أرقام الأصدقاء الذين أضافهم، وموقعه داخل خريطة اللعبة أثناء اللعب مع الأصدقاء.</p>
+<p>عند تشغيل اللعبة يُنشأ للاعب حساب مجهول تلقائيًا عبر خدمة Google Firebase، ويُعطى رقم لاعب من 8 أرقام. ويمكن للاعب اختياريًا تسجيل الدخول باستخدام Apple لحفظ تقدمه واسترجاعه، وفي هذه الحالة نستلم من Apple معرّفًا مجهولًا للحساب (وقد يُرسل الاسم إذا وافق اللاعب) ولا نستلم كلمة المرور. لا نطلب الاسم الحقيقي أو البريد أو رقم الجوال. يُحفظ على خوادم Firebase: رقم اللاعب، والاسم الذي يختاره داخل اللعبة، وشكل الشخصية، والمستوى، وآخر وقت اتصال، وقائمة أرقام الأصدقاء الذين أضافهم، وموقعه داخل خريطة اللعبة أثناء اللعب مع الأصدقاء، ونسخة احتياطية من تقدمه في اللعبة (الحفظ السحابي) لا يطّلع عليها غيره.</p>
 <h2>3. اللعب مع الأصدقاء والمحادثة الصوتية</h2>
 <p>الزيارة والمحادثة الصوتية متاحتان فقط بين لاعبين أضاف كل منهما الآخر برقمه. المايك لا يعمل إلا إذا فتحه اللاعب بنفسه من زر المايك، ويُنقل الصوت مباشرة بين أجهزة الأصدقاء لحظيًا (WebRTC) ولا يُسجَّل ولا يُحفظ على أي خادم. يمكن للاعب حظر أي صديق أو الإبلاغ عنه من قائمة الأصدقاء، ونراجع البلاغات ونتخذ الإجراء المناسب.</p>
 <h2>4. مشاركة البيانات</h2>
@@ -26,7 +26,7 @@ h1{font-size:1.5rem;margin-bottom:4px}h2{font-size:1.1rem;margin-top:28px}
 <h2>5. الإعلانات والمشتريات</h2>
 <p>لا تتضمن النسخة الحالية إعلانات أو مشتريات داخل التطبيق. عند إضافتها سيتم تحديث هذه السياسة قبل تفعيلها.</p>
 <h2>6. حذف البيانات</h2>
-<p>يمكن حذف البيانات المحلية بحذف التطبيق. ولحذف بيانات حسابك من خوادمنا، راسلنا على البريد أدناه مع رقم اللاعب وسنحذفها خلال 30 يومًا.</p>
+<p>يمكنك حذف حسابك وكل بياناتك من خوادمنا في أي وقت من داخل اللعبة: الإعدادات ← حذف حسابي. ويمكن أيضًا مراسلتنا على البريد أدناه مع رقم اللاعب وسنحذفها خلال 30 يومًا.</p>
 <h2>7. التعديلات على السياسة</h2>
 <p>قد نحدّث هذه السياسة عند إضافة ميزات جديدة، وننشر النسخة المحدثة مع تاريخ آخر تعديل.</p>
 <h2>8. التواصل</h2>
@@ -36,11 +36,11 @@ h1{font-size:1.5rem;margin-bottom:4px}h2{font-size:1.1rem;margin-top:28px}
 <h1>Privacy Policy — Tajer min Alsifr</h1>
 <p class="date">Last updated: November 14, 2026 (applies from version 1.1)</p>
 <p><b>On your device:</b> game progress (virtual balance, level, inventory, in-game properties, character look and settings) is stored locally.</p>
-<p><b>Account and player ID:</b> the game automatically creates an anonymous account using Google Firebase and assigns an 8-digit player ID. We do not ask for your real name, email or phone number. Stored on Firebase servers: player ID, in-game nickname, character look, level, last-online time, the list of friend IDs you added, and your position on the game map while playing with friends.</p>
+<p><b>Account and player ID:</b> the game automatically creates an anonymous account using Google Firebase and assigns an 8-digit player ID. You may optionally sign in with Apple to back up and restore your progress; Apple then shares an anonymous account identifier (and your name only if you allow it), never your password. We do not ask for your real name, email or phone number. Stored on Firebase servers: player ID, in-game nickname, character look, level, last-online time, the list of friend IDs you added, your position on the game map while playing with friends, and a private cloud backup of your game progress.</p>
 <p><b>Friends and voice chat:</b> visits and voice chat only work between two players who have added each other. The microphone is only used after you turn it on with the mic button; audio is sent directly and in real time between friends' devices (WebRTC) and is never recorded or stored on any server. You can block or report any friend from the friends list; we review reports and take appropriate action.</p>
 <p><b>Sharing:</b> we do not sell your data or share it for advertising or tracking. Data is hosted by Google Firebase (a service provider) only to run the friends features.</p>
 <p><b>Ads and purchases:</b> the current version has no ads or in-app purchases; this policy will be updated before they are added.</p>
-<p><b>Deletion:</b> delete the app to remove local data. To delete your account data from our servers, email us your player ID and we will delete it within 30 days.</p>
+<p><b>Deletion:</b> you can delete your account and all its data at any time inside the game: Settings → Delete account. You can also email us your player ID and we will delete it within 30 days.</p>
 <p>Contact: <a href="mailto:mgeeed2030@hotmail.com">mgeeed2030@hotmail.com</a></p>
 </div>
 </body>
