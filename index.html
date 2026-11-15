@@ -8,39 +8,116 @@
 body{font-family:-apple-system,"Segoe UI",Tahoma,sans-serif;max-width:720px;margin:0 auto;padding:24px 16px;line-height:1.9;color:#1f2937;background:#fff}
 h1{font-size:1.5rem;margin-bottom:4px}h2{font-size:1.1rem;margin-top:28px}
 .date{color:#6b7280;font-size:.9rem}hr{border:0;border-top:1px solid #e5e7eb;margin:40px 0}
-.en{direction:ltr;text-align:left}
+.en{direction:ltr;text-align:left}ul{padding-inline-start:22px}
 </style>
 </head>
 <body>
 <h1>سياسة الخصوصية — لعبة «تاجر من الصفر»</h1>
-<p class="date">آخر تحديث: 14 نوفمبر 2026 (اعتبارًا من الإصدار 1.1)</p>
-<p>نحن نحترم خصوصية مستخدمي لعبة «تاجر من الصفر»، ونوضح هنا البيانات التي تتعامل معها اللعبة وسبب ذلك.</p>
-<h2>1. البيانات المحفوظة على جهازك</h2>
-<p>يُحفظ تقدم اللاعب (الرصيد الافتراضي، المستوى، المخزون، العقارات داخل اللعبة، شكل الشخصية والإعدادات) محليًا على جهازه.</p>
-<h2>2. الحساب ورقم اللاعب</h2>
-<p>عند تشغيل اللعبة يُنشأ للاعب حساب مجهول تلقائيًا عبر خدمة Google Firebase، ويُعطى رقم لاعب من 8 أرقام. ويمكن للاعب اختياريًا تسجيل الدخول باستخدام Apple لحفظ تقدمه واسترجاعه، وفي هذه الحالة نستلم من Apple معرّفًا مجهولًا للحساب، وقد يُرسل الاسم والبريد الإلكتروني (أو بريدًا مخفيًا تنشئه Apple) إذا وافق اللاعب، ويُستخدم ذلك لتسجيل الدخول فقط، ولا نستلم كلمة المرور. لا نطلب رقم الجوال. يُحفظ على خوادم Firebase: رقم اللاعب، والاسم الذي يختاره داخل اللعبة، وشكل الشخصية، والمستوى، وآخر وقت اتصال، وقائمة أرقام الأصدقاء الذين أضافهم، وموقعه داخل خريطة اللعبة أثناء اللعب مع الأصدقاء، ونسخة احتياطية من تقدمه في اللعبة (الحفظ السحابي) لا يطّلع عليها غيره.</p>
-<h2>3. اللعب مع الأصدقاء والمحادثة الصوتية</h2>
-<p>الزيارة والمحادثة الصوتية متاحتان فقط بين لاعبين أضاف كل منهما الآخر برقمه. المايك لا يعمل إلا إذا فتحه اللاعب بنفسه من زر المايك، ويُنقل الصوت مباشرة بين أجهزة الأصدقاء لحظيًا (WebRTC) ولا يُسجَّل ولا يُحفظ على أي خادم. يمكن للاعب حظر أي صديق أو الإبلاغ عنه من قائمة الأصدقاء، ونراجع البلاغات ونتخذ الإجراء المناسب.</p>
-<h2>4. مشاركة البيانات</h2>
-<p>لا نبيع بيانات المستخدمين. تُستضاف بيانات الحساب والأصدقاء لدى Google Firebase (مقدم خدمة) لتشغيل ميزات اللعب فقط. ولا نشارك أي شيء من هذه البيانات (اسمك، رقم اللاعب، أصدقائك، تقدمك) مع شبكات الإعلانات.</p>
-<h2>5. الإعلانات</h2>
-<p>تعرض اللعبة إعلانات من Google AdMob: إعلانات بمكافأة تختار أنت مشاهدتها (مثل التوصيل الفوري أو مضاعفة المبيعات)، وإعلان بين الأيام أحياناً. قد تجمع Google AdMob معرّف الإعلانات للجهاز (IDFA) وبيانات تقنية مثل نوع الجهاز والموقع التقريبي المستنتج من عنوان IP وتفاعلك مع الإعلانات، لعرض الإعلانات وقياسها ومنع الاحتيال. يُطلب منك إذن التتبع من أبل (App Tracking Transparency)، وإذا رفضت فلن يُستخدم معرّف الإعلانات وستظهر إعلانات أقل تخصيصاً. ويحق لمستخدمي أوروبا ضبط الموافقة عبر نافذة الموافقة. لمعرفة المزيد: <a href="https://policies.google.com/technologies/partner-sites">كيف تستخدم Google البيانات</a>. لا تتضمن اللعبة مشتريات داخل التطبيق.</p>
-<h2>6. حذف البيانات</h2>
-<p>يمكنك حذف حسابك وكل بياناتك من خوادمنا في أي وقت من داخل اللعبة: الإعدادات ← حذف حسابي. ويمكن أيضًا مراسلتنا على البريد أدناه مع رقم اللاعب وسنحذفها خلال 30 يومًا.</p>
-<h2>7. التعديلات على السياسة</h2>
+<p class="date">آخر تحديث: 16 نوفمبر 2026 (اعتبارًا من الإصدار 1.2)</p>
+
+<h2>1. المقدمة</h2>
+<p>نحترم خصوصية مستخدمي لعبة «تاجر من الصفر»، ونلتزم بحماية بياناتهم وتوفير تجربة لعب آمنة، خصوصًا للأطفال. توضح هذه السياسة البيانات التي تتعامل معها اللعبة، وسبب ذلك، وكيف تُحفظ وتُشارك.</p>
+
+<h2>2. البيانات التي نجمعها</h2>
+<ul>
+<li>الاسم الذي يختاره اللاعب داخل اللعبة، ورقم اللاعب (8 أرقام) ومعرّف حساب مجهول يُنشأ تلقائيًا عبر Google Firebase.</li>
+<li>عند تسجيل الدخول باستخدام Apple (اختياري): معرّف الحساب، وقد تُرسل Apple الاسم والبريد الإلكتروني (أو بريدًا مخفيًا تنشئه Apple) إذا وافق المستخدم. ولا نحصل على كلمة المرور.</li>
+<li>تقدم اللاعب: المستوى، الرصيد الافتراضي، المخزون، الممتلكات داخل اللعبة، شكل الشخصية والإعدادات.</li>
+<li>سنة الميلاد التي يختارها اللاعب، وتُستخدم فقط لتفعيل وضع الأطفال.</li>
+<li>قائمة أرقام الأصدقاء الذين أضافهم اللاعب، وآخر وقت اتصال، وموقعه داخل خريطة اللعبة أثناء اللعب مع الأصدقاء.</li>
+<li>البلاغات التي يرسلها اللاعب (عن صديق أو عن إعلان).</li>
+<li>معلومات تقنية تعالجها خدمة الإعلانات Google AdMob (انظر البند 8).</li>
+</ul>
+<p>لا نطلب رقم الجوال أو العنوان أو الموقع الجغرافي الدقيق، ونحرص على تقليل البيانات إلى القدر اللازم لتشغيل اللعبة.</p>
+
+<h2>3. استخدام البيانات</h2>
+<ul>
+<li>تشغيل اللعبة وحفظ التقدم واستعادته (الحفظ السحابي).</li>
+<li>تشغيل ميزات الأصدقاء والزيارات والمحادثة الصوتية.</li>
+<li>حماية الحسابات ومنع إساءة الاستخدام ومعالجة البلاغات.</li>
+<li>عرض الإعلانات بما يتناسب مع العمر وإعدادات الخصوصية.</li>
+</ul>
+
+<h2>4. اللعب دون اتصال بالإنترنت</h2>
+<p>يمكن لعب الميزات الفردية دون إنترنت، ويُحفظ التقدم على الجهاز. وعند توفر الإنترنت تُحفظ نسخة احتياطية في حساب اللاعب. أما الأصدقاء والمحادثة الصوتية والإعلانات فتحتاج اتصالًا بالإنترنت.</p>
+
+<h2>5. تسجيل الدخول باستخدام Apple</h2>
+<p>تسجيل الدخول باستخدام Apple اختياري، ويُستخدم لحفظ التقدم واسترجاعه على أي جهاز. ويخضع لـ <a href="https://www.apple.com/legal/privacy/">سياسة خصوصية Apple</a>.</p>
+
+<h2>6. المحادثة الصوتية</h2>
+<ul>
+<li>متاحة فقط بين لاعبَين أضاف كل منهما الآخر برقمه، ولا يوجد لعب أو كلام مع غرباء.</li>
+<li>المايك مغلق افتراضيًا، ولا يعمل إلا إذا فتحه اللاعب بنفسه وسمح للعبة باستخدامه، ويمكنه إغلاقه في أي وقت.</li>
+<li>يُنقل الصوت مباشرة ولحظيًا بين أجهزة الأصدقاء (WebRTC)، ولا يُسجَّل ولا يُحفظ على أي خادم.</li>
+<li>يمكن للاعب حظر أي صديق أو الإبلاغ عنه من قائمة الأصدقاء، ونراجع البلاغات ونتخذ الإجراء المناسب.</li>
+<li>المحادثة الصوتية <b>مغلقة بالكامل</b> في وضع الأطفال، ولا يمكن فتحها من داخل اللعبة.</li>
+<li>يُمنع التنمر والتحرش والتهديد والإساءة ومشاركة المعلومات الشخصية.</li>
+</ul>
+
+<h2>7. حماية الأطفال (أقل من 13 سنة)</h2>
+<p>عند أول تشغيل تسأل اللعبة عن سنة الميلاد. وإذا كان عمر اللاعب 13 سنة أو أقل يُفعَّل <b>وضع الأطفال</b> تلقائيًا:</p>
+<ul>
+<li>إغلاق المحادثة الصوتية بالكامل.</li>
+<li>عرض إعلانات غير مخصصة فقط، مع إبلاغ Google بأن المستخدم طفل، وعدم طلب إذن التتبع، وعدم استخدام معرّف الإعلانات.</li>
+<li>تقييد الإعلانات بتصنيف «لجميع الجماهير» (G).</li>
+</ul>
+<p>يمكن لولي الأمر مراسلتنا لطلب الاطلاع على بيانات طفله أو حذفها أو سحب الموافقة على معالجتها، ويمكنه أيضًا حذف الحساب مباشرة من الإعدادات.</p>
+
+<h2>8. الإعلانات</h2>
+<p>تعرض اللعبة إعلانات من Google AdMob: إعلانات بمكافأة يختار اللاعب مشاهدتها (مثل التوصيل الفوري أو مضاعفة المبيعات)، وإعلانًا بين الأيام أحيانًا.</p>
+<ul>
+<li>قد تعالج Google AdMob معلومات تقنية، مثل نوع الجهاز، والموقع التقريبي المستنتج من عنوان IP، والتفاعل مع الإعلانات، وذلك لعرض الإعلانات وقياسها ومنع الاحتيال.</li>
+<li>لا يُستخدم معرّف الإعلانات (IDFA) إلا إذا وافق اللاعب على إذن التتبع من Apple. ولا يُطلب هذا الإذن من الأطفال.</li>
+<li>جميع الإعلانات مقيدة بتصنيف «لجميع الجماهير» (G)، ونحظر الفئات الحساسة: المواعدة والتعارف، والقمار، والإشارات الجنسية، والأدوية والمكملات، وإنقاص الوزن، وعمليات التجميل، والثراء السريع، والسياسة، والأديان، والإثارة.</li>
+<li>يمكن الإبلاغ عن أي إعلان غير مناسب من: الإعدادات ← «بلّغ عن إعلان»، أو بالضغط على علامة ⓘ داخل الإعلان.</li>
+<li>لا نشارك مع شبكات الإعلانات اسمك أو رقم اللاعب أو أصدقاءك أو تقدمك.</li>
+</ul>
+<p>للمزيد: <a href="https://policies.google.com/privacy">سياسة خصوصية Google</a> و<a href="https://policies.google.com/technologies/partner-sites">كيف تستخدم Google البيانات</a>.</p>
+
+<h2>9. المشتريات داخل اللعبة</h2>
+<p>لا تتضمن اللعبة حاليًا أي مشتريات بأموال حقيقية. والعملات والممتلكات داخل اللعبة افتراضية ولا تمثل أموالًا حقيقية. وإذا أُضيفت مشتريات مستقبلًا فستتم عبر نظام الدفع الخاص بـ Apple، وسنحدّث هذه السياسة قبل تفعيلها.</p>
+
+<h2>10. مشاركة البيانات</h2>
+<p>لا نبيع البيانات الشخصية. نستخدم مقدمي خدمات لتشغيل اللعبة فقط: Google Firebase (الحساب والحفظ والأصدقاء)، وApple (تسجيل الدخول)، وGoogle AdMob (الإعلانات). وقد نفصح عن البيانات للجهات المختصة إذا وُجد التزام نظامي بذلك.</p>
+
+<h2>11. حماية البيانات والاحتفاظ بها</h2>
+<p>نستخدم تدابير تقنية مناسبة لحماية البيانات، منها قواعد تمنع أي لاعب من قراءة بيانات غيره أو تعديلها. ونحتفظ بالبيانات ما دام الحساب موجودًا. وعند حذف الحساب تُحذف بياناته من خوادمنا، باستثناء ما يلزم الاحتفاظ به نظامًا. ولا توجد وسيلة تخزين تضمن حماية مطلقة بنسبة 100%.</p>
+
+<h2>12. حقوقك وحذف الحساب</h2>
+<ul>
+<li>الاطلاع على بياناتك وتصحيحها وطلب نسخة منها.</li>
+<li>حذف حسابك وكل بياناتك في أي وقت من داخل اللعبة: الإعدادات ← حذف حسابي، أو بمراسلتنا برقم اللاعب لنحذفها خلال 30 يومًا.</li>
+<li>التحكم في إذن المايك وإذن التتبع من إعدادات الجهاز.</li>
+<li>سحب موافقتك، وتقديم شكوى إلى الجهة المختصة بحماية البيانات.</li>
+</ul>
+
+<h2>13. نقل البيانات خارج المملكة</h2>
+<p>تُخزَّن بيانات الحساب لدى Google Firebase في خوادم داخل الاتحاد الأوروبي (بلجيكا)، وقد تعالج Google وApple بعض البيانات خارج المملكة العربية السعودية، وذلك بما يتوافق مع الأنظمة المعمول بها.</p>
+
+<h2>14. الأنظمة</h2>
+<p>نعمل على الالتزام بنظام حماية البيانات الشخصية في المملكة العربية السعودية ولوائحه، وبمتطلبات حماية خصوصية الأطفال في الدول التي تتاح فيها اللعبة.</p>
+
+<h2>15. تحديث السياسة</h2>
 <p>قد نحدّث هذه السياسة عند إضافة ميزات جديدة، وننشر النسخة المحدثة مع تاريخ آخر تعديل.</p>
-<h2>8. التواصل</h2>
-<p>للاستفسارات أو طلب حذف البيانات: <a href="mailto:mgeeed2090@gmail.com">mgeeed2090@gmail.com</a></p>
+
+<h2>16. التواصل</h2>
+<p>للاستفسارات أو طلبات الحذف أو البلاغات: <a href="mailto:mgeeed2090@gmail.com">mgeeed2090@gmail.com</a></p>
+
 <hr>
 <div class="en">
 <h1>Privacy Policy — Tajer min Alsifr</h1>
-<p class="date">Last updated: November 14, 2026 (applies from version 1.1)</p>
-<p><b>On your device:</b> game progress (virtual balance, level, inventory, in-game properties, character look and settings) is stored locally.</p>
-<p><b>Account and player ID:</b> the game automatically creates an anonymous account using Google Firebase and assigns an 8-digit player ID. You may optionally sign in with Apple to back up and restore your progress; Apple then shares an anonymous account identifier, and may share your name and email (or a private relay email created by Apple) if you allow it; these are used only for sign-in. We never receive your password and do not ask for your phone number. Stored on Firebase servers: player ID, in-game nickname, character look, level, last-online time, the list of friend IDs you added, your position on the game map while playing with friends, and a private cloud backup of your game progress.</p>
-<p><b>Friends and voice chat:</b> visits and voice chat only work between two players who have added each other. The microphone is only used after you turn it on with the mic button; audio is sent directly and in real time between friends' devices (WebRTC) and is never recorded or stored on any server. You can block or report any friend from the friends list; we review reports and take appropriate action.</p>
-<p><b>Sharing:</b> we do not sell your data. Account and friends data is hosted by Google Firebase (a service provider) only to run game features, and none of it (your name, player ID, friends or progress) is shared with ad networks.</p>
-<p><b>Ads:</b> the game shows ads from Google AdMob: rewarded ads you choose to watch (e.g. instant delivery or double sales) and an occasional ad between days. Google AdMob may collect the device advertising identifier (IDFA) and technical data such as device type, approximate location inferred from IP address and ad interactions, to serve and measure ads and prevent fraud. You are asked for Apple's tracking permission (App Tracking Transparency); if you decline, the advertising identifier is not used and ads are less personalized. Users in Europe can manage consent in the consent form. Learn more: <a href="https://policies.google.com/technologies/partner-sites">How Google uses data</a>. There are no in-app purchases.</p>
-<p><b>Deletion:</b> you can delete your account and all its data at any time inside the game: Settings → Delete account. You can also email us your player ID and we will delete it within 30 days.</p>
+<p class="date">Last updated: November 16, 2026 (applies from version 1.2)</p>
+<p><b>Data we collect:</b> in-game nickname, an 8-digit player ID and an anonymous account created via Google Firebase. If you choose Sign in with Apple, we receive an account identifier, plus your name and email (or Apple private relay email) only if you allow it; never your password. We also store your game progress, character look and settings; the birth year you select (used only to enable Kids Mode); your list of friend IDs, last-online time and in-game map position while playing with friends; and any reports you send. We do not ask for your phone number, address or precise location.</p>
+<p><b>Offline play:</b> single-player features work offline and progress is saved on your device; it is backed up to your account when online. Friends, voice chat and ads need an internet connection.</p>
+<p><b>Voice chat:</b> works only between two players who have added each other. The microphone is off by default and only used after you turn it on. Audio goes directly and in real time between friends' devices (WebRTC) and is never recorded or stored. You can block or report any friend. Voice chat is fully disabled in Kids Mode.</p>
+<p><b>Children (13 and under):</b> the game asks for birth year on first launch. For players aged 13 or under, Kids Mode is enabled automatically: voice chat is turned off; only non-personalized ads are shown; ad requests are tagged as child-directed; the tracking permission is never requested and the advertising identifier is not used. Parents can contact us to review or delete their child's data, or delete the account in Settings.</p>
+<p><b>Ads:</b> the game shows Google AdMob ads: rewarded ads you choose to watch and an occasional ad between days. AdMob may process technical data (device type, approximate location from IP, ad interactions) to serve and measure ads and prevent fraud. The advertising identifier (IDFA) is used only if you allow Apple's tracking permission. All ads are limited to the "G" (general audiences) rating, and we block sensitive categories, including dating, gambling, sexual content, drugs and supplements, weight loss, cosmetic procedures, get-rich-quick, politics, religion and sensationalism. You can report an inappropriate ad in Settings → "Report an ad" or by tapping ⓘ in the ad. We never share your name, player ID, friends or progress with ad networks. <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<p><b>Purchases:</b> there are currently no real-money purchases. In-game money and property are virtual and have no real value. If purchases are added, they will use Apple's payment system and this policy will be updated first.</p>
+<p><b>Sharing:</b> we do not sell personal data. Service providers: Google Firebase (account, save, friends), Apple (sign-in) and Google AdMob (ads). We may disclose data where legally required.</p>
+<p><b>Security and retention:</b> database rules prevent players from reading or changing other players' data. Data is kept while your account exists and deleted when you delete it, except where retention is legally required.</p>
+<p><b>Your rights:</b> you can access, correct, export or delete your data. To delete your account and all its data, go to Settings → Delete account, or email us your player ID and we will delete it within 30 days. You can manage microphone and tracking permissions in your device settings, withdraw consent, and complain to a data protection authority.</p>
+<p><b>International transfer:</b> account data is stored by Google Firebase in the EU (Belgium). Google and Apple may process some data outside Saudi Arabia.</p>
+<p><b>Laws:</b> we aim to comply with the Saudi Personal Data Protection Law and its regulations, and with children's privacy rules in countries where the game is available.</p>
 <p>Contact: <a href="mailto:mgeeed2090@gmail.com">mgeeed2090@gmail.com</a></p>
 </div>
 </body>
